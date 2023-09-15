@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function Func() { fetch("./settlementexpec.json")
+        .then((res) => {
+        return res.json();
+    })
+    .then((data) => {
+            var obj = data.settlementExpectations;
+
+        obj.forEach(element => {
+                document.body.innerHTML+=`
+                  <p> expectedSettlementDate: ${element.expectedSettlementDate}</p>
+                  <p> totalAmount ${element.totalAmount}</p>
+                  <p> balanceAmount ${element.balanceAmount}</p>
+                  <p> committedAmount ${element.committedAmount}</p>
+                  <p> uncommittedAmount ${element.uncommittedAmount}</p>
+                  <p> settledAmount ${element.settledAmount}</p
+                <p> assetHolder ${element.assetHolder}</p
+                <p> paymentScheme ${element.paymentScheme}</p
+                <p> debtor ${element.debtor}</p
+                    <div> settlementObligations</div>
+                <br>
+                <br>` 
+
+                for (const key in element.settlementObligations) {
+        if (element.settlementObligations.hasOwnProperty(key)) {
+            document.body.innerHTML += `<p>${key}: ${element.settlementObligations[key]}</p>`;
+        }
+    }
+
+                 
+            })
+              
+          });
+        };
+
+        document.addEventListener('DOMContentLoaded', Func())
+    </script>
+</body>
+</html>
