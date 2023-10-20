@@ -1,19 +1,14 @@
-{
-“status”: “success”,
-“payment_id”: “123456789”,
-“amount”: {
-“value”: 100,
-“currency”: “USD”
-},
-“transactions”: [
-{
-“transaction_id”: “123456789”,
-“status”: “success”
-},
-{
-“transaction_id”: “234567891”,
-“status”: “success”
-}
-]
-}
+{"key":"568a2b17-f120-3887-31af-dd4002c21b6c",
+"reference":"UR-ROBOThzp15966",
+"dueDate":"2023-08-23T00:00:00",
+"paymentScheme":"MCC",
+"debtor":"31688539000109",
+"originalAssetHolderDocumentType":"CNPJ",
+"originalAssetHolder":"47742213000152",
+"amount":100000000,
+"prePaidAmount":0
+,"processReference":"UR-ROBOTWCw43643",
+"createdAt":"2023-08-23T15:37:17.5661326Z",
+"lastUpdated":"2023-08-23T15:49:22.5240435Z",
+"settlementObligations":[{"key":"568a2b17-f120-3887-31af-dd4002c21b6c","totalAmount":100000000,"settledAmount":0,"balanceAmount":100000000,"committedAmount":0,"uncommittedAmount":0,"dueDate":"2023-08-23T00:00:00","expectedSettlementDate":"2023-08-23T00:00:00","originalAssetHolder":"47742213000152","originalAssetHolderDocumentType":"CNPJ","assetHolder":"47742213000152","assetHolderDocumentType":"CNPJ","obligationType":"Committed","lastUpdated":"2023-08-23T15:49:22.5206196Z","advancements":[],"settlements":[],"contractObligations":[{"key":"6de1ae6a-5d6c-4d5c-b78e-319a3921a6d5","reference":"CT-ROBOTENL75843","contractHolderDocumentType":"CNPJ","contractHolder":"72963718000194","effectPriority":1,"tradeRepository":"31345107000103","contractType":"Warranty","warrantyType":"Fiduciary","divisionMethod":"Percentage","effectStrategy":"Specific","effectAmount":10000,"percentageValue":10000,"isCanceled":false,"committedEffectAmount":100000000,"bankAccount":{"branch":"3232","account":"47990","accountDigit":"X3","accountType":"CC","ispb":"12345678","documentType":"CNPJ","documentNumber":"47742213000152"},"createdAt":"2023-08-23T15:49:19.8315007Z","lastUpdated":"2023-08-23T15:49:22.5206196Z"}]}]}
 
